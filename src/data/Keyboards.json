@@ -1,0 +1,26 @@
+{
+    "bmw": {
+        "rows": 4,
+        "columns": 3,
+        "cells": {
+            "uuid-1": {
+                "type": "key",
+                "label": "he wants",
+                "backgroundColor": "green",
+                "rowStart": 1,
+                "rowSpan": 2,
+                "columnStart": 1,
+                "columnSpan": 1
+            },
+            "uuid-2": {
+                "type": "key",
+                "label": "helpful",
+                "backgroundColor": "blue",
+                "rowStart": 1,
+                "rowSpan": 1,
+                "columnStart": 2,
+                "columnSpan": 1
+            }
+        }
+    }
+}

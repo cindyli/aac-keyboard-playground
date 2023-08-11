@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="tiny" width="742.5" height="580.5" viewBox="-0.75 -0.75 27.5 21.5" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.5">
+    <rect x="-0.75" y="-0.75" width="100%" height="100%" stroke="none" fill="#f5eb82"></rect>
+    <path class="denseGrid" stroke-width="0.166" stroke="#e1d878" stroke-linecap="square" stroke-linejoin="miter" d="M0,1H26M0,3H26M0,5H26M0,7H26M0,9H26M0,11H26M0,13H26M0,15H26M0,17H26M0,19H26"></path>
+    <path class="denseGrid" stroke-width="0.166" stroke="#e1d878" stroke-linecap="square" stroke-linejoin="miter" d="M1,0V20M3,0V20M5,0V20M7,0V20M9,0V20M11,0V20M13,0V20M15,0V20M17,0V20M19,0V20M21,0V20M23,0V20M25,0V20"></path>
+    <path class="semiDenseGrid" stroke-width="0.166" stroke="#e1d878" stroke-linecap="square" stroke-linejoin="miter" d="M0,2H26M0,6H26M0,10H26M0,14H26M0,18H26"></path>
+    <path class="semiDenseGrid" stroke-width="0.166" stroke="#e1d878" stroke-linecap="square" stroke-linejoin="miter" d="M2,0V20M6,0V20M10,0V20M14,0V20M18,0V20M22,0V20M26,0V20"></path>
+    <path class="sparseGrid" stroke-width="0.166" stroke="#bfb765" stroke-linecap="square" stroke-linejoin="miter" d="M0,0H26M0,4H26M0,12H26M0,20H26"></path>
+    <path class="sparseGrid" stroke-width="0.166" stroke="#bfb765" stroke-linecap="square" stroke-linejoin="miter" d="M0,0V20M4,0V20M8,0V20M12,0V20M16,0V20M20,0V20M24,0V20"></path>
+    <path class="skyEarthGrid" stroke-width="0.166" stroke="#7f7a44" stroke-linecap="square" stroke-linejoin="miter" d="M0,8H26M0,16H26"></path>
+    <path d="M0,12a4,4 0 1,1 8,0M0,12v4M0,16h8M8,12v4"></path><path d="M10,12a2,2 0 1,1 4,0a2,2 0 1,1 -4,0M12,10a2,2 0 1,1 4,0q0,3 -4,6"></path><path d="M18,8h8M18,16h8M18,8l8,8"></path>
+</svg>
