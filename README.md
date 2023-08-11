@@ -26,7 +26,9 @@ npm ci
 
 ## Development
 
-To start a local web server for development and every change to the source code will be watched and redeployed,
+### Start a Development Server
+
+To start a local web server for development that every change to the source code will be watched and redeployed,
 run:
 
 ```bash
@@ -34,6 +36,14 @@ npm run dev
 ```
 
 The website will be available at http://localhost:3000
+
+### Linting
+
+To lint the source code, run:
+
+```bash
+npm run lint
+```
 
 ## Production Build
 
