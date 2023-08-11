@@ -1,28 +1,39 @@
-name: Build and Lint
+name: CI
 
-on:
-  workflow_dispatch:
-  workflow_call:
-  pull_request:
-    branches:
-      - '**'
-  push:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
-  lint:
-    name: Build and lint
-    runs-on: ubuntu-latest
+
+  build:
+    name: Build
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [16.x, 18.x, 20.x]
+    runs-on: ${{ matrix.os }}
+    env:
+      CI: true
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
       - uses: actions/setup-node@v3
         with:
-          node-version-file: 'package.json'
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
-      - run: npm ci
-      - name: lint
-        env:
-          CI: true
+          node-version: ${{ matrix.node-version }}
+      - name: Versions
+        run: |
+          echo Node:
+          node --version
+          echo NPM:
+          npm --version
+      - name: NPM audit
+        continue-on-error: true
+        run: npm audit
+      - name: NPM install (ci)
+        run: npm ci
+      - name: Lint
         run: npm run lint
+      - name: Build
+        run: npm run build
+      - name: Lint Documentation
+        run: npm run markdownlint
