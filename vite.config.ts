@@ -8,9 +8,9 @@ export default defineConfig({
     port: 3000
   },
   css: {
-    devSourcemap: true,
+    devSourcemap: true
   },
   build: {
-    sourcemap: true,
+    sourcemap: true
   }
 });
