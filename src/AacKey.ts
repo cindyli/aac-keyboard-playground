@@ -1,27 +1,21 @@
-import { Component } from "preact";
+import { useCallback } from "preact/hooks";
 import { html } from "htm/preact";
-import { IAacKey } from "./types";
+import { IAacKey } from "./index.d";
 
-export class AacKey extends Component<IAacKey> {
-  constructor(props: IAacKey) {
-    super(props);
-  }
-
-  onClick() {
+export function AacKey(aacKeyProps: IAacKey) {
+  const onClick = useCallback(() => {
     alert("clicked");
-  }
-  
-  render() { 
-    return html`
-    <button id=${this.props.id} 
-      style="
-        background-color: ${this.props.backgroundColor};
-        grid-column: ${this.props.columnStart} / span ${this.props.columnSpan};
-        grid-row: ${this.props.rowStart} / span ${this.props.rowSpan};
-      "
-      onClick=${this.onClick}
-    >
-      ${this.props.label}
-    </button>`;
-  }
+  }, null);
+
+  return html`
+  <button id=${aacKeyProps.id} 
+    style="
+      background-color: ${aacKeyProps.backgroundColor};
+      grid-column: ${aacKeyProps.columnStart} / span ${aacKeyProps.columnSpan};
+      grid-row: ${aacKeyProps.rowStart} / span ${aacKeyProps.rowSpan};
+    "
+    onClick=${onClick}
+  >
+    ${aacKeyProps.label}
+  </button>`;
 }
