@@ -41,12 +41,20 @@ npm run dev
 
 The website will be available at [http://localhost:3000](http://localhost:3000).
 
-### Linting
+### Lint
 
 To lint the source code, run:
 
 ```bash
 npm run lint
+```
+
+### Run Tests
+
+To run tests, run:
+
+```bash
+npm test
 ```
 
 ## Production Build
